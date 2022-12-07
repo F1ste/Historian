@@ -1,0 +1,226 @@
+body{
+    background: #FFFBF2;
+}
+.main {
+    background: #120D0D;
+    height: 970px;
+}
+.journal-number{
+    font-weight: 500;
+    font-size: 2.6667rem;
+    line-height: 3.5556rem;
+    color: #FFFFFF;
+}
+.main-info h1{
+    margin-top: 10px;
+}
+.journal-navigation__body{
+    padding-top: 130px;
+    padding-bottom: 80px;
+}
+.journal-navigation__list{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 75px;
+}
+.journal-navigation__item{
+    max-width: 160px;
+}
+.journal-navigation__item img{
+    width: 100%;
+}
+.stories-and-news{
+    padding-bottom: 50px;
+}
+.stories-and-news__content{
+    display: grid;
+    row-gap: 30px;
+}
+.stories-and-news span{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.1667rem;
+    color: #EEC456;
+    text-transform: uppercase;
+}
+.stories-and-news .item-heading{
+    font-family: 'Raleway';
+    line-height: 1.5444rem;
+    font-weight: 700;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom:0;
+}
+.stories-and-news .stories__big-item .item-heading{
+    margin-top: 10px;
+    font-size: 1.95rem;
+    line-height: 2rem;
+}
+.stories-and-news .stories__small-item .item-heading{
+    font-size: 1.4rem;
+}
+.stories-and-news__content p{
+    font-family: 'Raleway';
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.3125rem;
+    color: #000000;
+    margin-top: 15px;
+}
+.stories__big-item img{
+    max-height: 325px;
+    height: auto;
+    object-fit: cover;
+}
+.stories-and-news img{
+    width: 100%;
+}
+.journal-news__item img{
+    object-fit: cover;
+    object-position: top;
+    height: 220px;
+}
+.stories__big-item{
+    grid-column: 1/5;
+    grid-row: 1/4;
+    padding-right: 30px;
+    border-right: 2px solid #b3b3b3;
+}
+.stories__big-item a{
+    display: flex;
+    flex-direction: column;
+}
+.stories__big-item span{
+    margin-top: 20px;
+}
+.stories__big-item p{
+    margin-top: 15px;
+    font-size: 1.1111rem;
+}
+.stories__small-item{
+    grid-column: 5/8;
+    margin-left: 35px;
+    padding-bottom: 35px;
+    border-bottom: 2px solid #b3b3b3;
+}
+
+.stories__small-item:nth-child(2){
+    margin-top: 0;
+}
+.stories__small-item:nth-child(4){
+    border: none;
+    padding-bottom: 0;
+}
+.stories__small-items .small-item p{
+    margin-top: 20px;
+}
+.journal-news{
+    grid-column: 1/8;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 75px;
+    border-top: 2px solid #b3b3b3;
+    padding-top: 50px;
+}
+.journal-news__item{
+    padding-bottom: 20px;
+}
+.journal-news__item a{
+    display: flex;
+    flex-direction: column;
+}
+.journal-news__item span{
+    color: #FF5271;
+    margin-top: 20px;
+}
+.journal-news__item p{
+    margin-top: 10px;
+}
+@media (max-width:1440.98px) {
+    .main {
+        height: 831.5px;
+    }
+}
+@media (max-width:1400px) {
+    .journal-navigation__list{
+        gap: 90px;
+        justify-items: center;
+    }
+    .journal-navigation__item{
+        max-width: 130px;
+    }
+
+}
+@media(max-width:991.98px){
+    .main {
+        height: 750px;
+    }
+    .journal-navigation__list{
+        gap: 35px;
+    }
+    .stories-and-news__container{
+        max-width: 850px;
+        row-gap: 25px;
+    }
+    .stories__big-item{
+        grid-column: 1;
+        padding-right: 0;
+        border-right: none;
+        border-bottom: 2px solid #b3b3b3;
+        padding-bottom: 20px;
+    }
+    .stories__small-item{
+        grid-column: 1;
+        
+        padding-bottom: 25px;
+        margin-left: 0 ;
+    }
+
+    .stories__small-item:nth-child(3) {
+        border-bottom: 2px solid #b3b3b3;
+
+    }
+    .journal-news{
+        grid-column: 1;
+        grid-template-columns: 1fr;
+        row-gap: 25px;
+
+    }
+    .journal-news__item{
+        padding-bottom: 20px;
+    }
+    .journal-news__item img{
+        object-fit: cover;
+        object-position: top;
+        height: 500px;
+    }
+}
+@media(max-width:767.98px){
+    .journal-navigation__list{
+        grid-template-columns: repeat(2,1fr);
+        gap: 35px;
+    }
+}
+@media(max-width:420.98px){
+    .journal-news{
+        padding-top: 25px;
+    }
+    .stories-and-news__content{
+        row-gap: 25px;
+    }
+    .journal-news__item p{
+        margin-top: 5px;
+    }
+    .journal-news{
+        row-gap: 25px;
+    }
+    .journal-news__item{
+        padding-bottom: 10px;
+    }
+    .journal-news__item img{
+        object-fit: cover;
+        object-position: top;
+        height: 190px;
+    }
+}

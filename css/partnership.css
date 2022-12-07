@@ -1,0 +1,20 @@
+
+.contacts__header{
+    flex-direction: column;
+}
+.personal-title{
+    padding-bottom: 10px;
+}
+.contacts__text{
+    margin-top: 30px;
+    margin-left: 0;
+    font-weight: 400;
+    font-size: 1.39em;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+@media(max-width:767.98px) {
+    .contacts__header{
+        align-items: normal;
+    }
+}

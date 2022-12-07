@@ -1,0 +1,88 @@
+/* LARGE DEVICES */
+
+@media (max-width: 1600px) {
+  .header-2 {
+    font-size: 26px;
+  }
+
+  .form {
+    width: 50%;
+    padding: 46px 60px;
+  }
+
+  .form .form-title {
+    column-gap: 20px;
+  }
+
+  .form .form-body {
+    row-gap: 20px;
+  }
+}
+
+/* DESKTOP DEVICES */
+
+@media (max-width: 1024px) {
+  .form .form-body {
+    padding-right: 0;
+  }
+}
+
+/* TABLET DEVICES */
+
+@media (max-width: 768px) {
+  .form {
+    width: 100%;
+    padding: 27px 45px;
+  }
+}
+
+/* MOBILE DEVICES */
+
+@media (max-width: 425px) {
+  a {
+    font-size: 11px;
+  }
+
+  .header-2 {
+    font-size: 18px;
+  }
+
+  .form-label {
+    padding-left: 0;
+  }
+
+  .form-control {
+    font-size: 12px;
+    padding: 14px 8px;
+  }
+
+  .form-control-addon .form-control {
+    padding-right: 32px;
+  }
+
+  .form-control-addon .addon-btn {
+    right: 8px;
+  }
+
+  .btn {
+    padding: 14px 28px;
+  }
+
+  .form {
+    border-radius: 3px;
+    padding: 27px 15px;
+  }
+
+  .form .form-title {
+    column-gap: 10px;
+  }
+
+  .form .form-body {
+    row-gap: 20px;
+    padding-right: 0;
+  }
+
+  .form .btn {
+    width: 100%;
+  }
+}

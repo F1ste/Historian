@@ -1,0 +1,30 @@
+.statistics__list {}
+
+
+.statistics__item {
+    margin-bottom: 13px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-size: 20px;
+    color: #FFFBF2;
+}
+
+.statistics__item span {
+    font-weight: 400;
+    font-family: 'Playfair Display';
+    font-size: 25px;
+}
+
+@media(max-width:420.98px) {
+    .statistics__item {
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+    .statistics__item span {
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size: 15px;
+    }
+}

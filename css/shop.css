@@ -1,0 +1,70 @@
+.personal-search {
+    margin-bottom: 48px;
+}
+
+.personal-field__title {
+    font-size: 12px;
+    line-height: 100%;
+    color: #EFE6DE;
+    margin-bottom: 8px;
+}
+
+.personal-field__input-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.personal-field__search-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.personal-field__search-btn{
+    position: absolute;
+    height: 100%;
+    left: 19px;
+    background: inherit;
+}
+.personal-field__search-btn:before{
+    content: url(../img/search.svg);
+}
+.custom-input:focus + .personal-field__search-btn::before{
+    content: url(../img/searchactive.svg);
+}
+.custom-input:invalid + .personal-field__search-btn::before{
+    content: url(../img/search-invalid.svg);
+}
+.personal-field__input {
+    flex: 1 1 100%;
+    width: 100%;
+    padding: 17px 48px;
+    background: #EFE6DE;
+    border-radius: 3px;
+}
+
+.personal-field__text {
+    flex: 0 1 310px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 120%;
+    color: #FFFBF2;
+    margin-left: 27px;
+}
+.personal-card .shop-btn{
+    margin-top: 15px;
+}
+
+@media(max-width:767.98px) {
+    .personal-field__input-wrapper {
+        flex-direction: column;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    .personal-field__text {
+        flex: auto;
+        margin-left: 0px;
+        margin-top: 10px;
+        font-size: 13px;
+    }
+}

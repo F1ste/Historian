@@ -1,0 +1,184 @@
+.about-us-single{
+    background: #120D0D;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    flex: 1 0 auto;
+}
+.about-us-single .main-title{
+    display: inline-block;
+    margin-top: 0;
+    font-size: 2.2222rem;
+    font-weight: 700;
+    line-height: 100%;
+    border-bottom: 2px solid rgba(246, 239, 222, 0.6);
+    padding-bottom: 20px;
+    padding-right: 20px;
+    margin-bottom: 23px;
+}
+.about-us-single__heading{
+    margin-top: 9rem;
+    display: flex;
+    justify-content: space-between;
+}
+.about-us-single .about-us-single__heading p{
+    margin-top: 17px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.3889rem;
+    line-height: 100%;
+}
+.about-us-single__content{
+    margin-top: 17px;
+    column-gap: 150px;
+    row-gap: 3.3667rem;
+}
+
+.about-us-single .bottom-item-info{
+    margin-top: 40px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1667rem;
+    line-height: 125%;
+    color: #FFFBF2;
+}
+.about-us-single__content img{
+    margin-right: 30px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 480px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.about-us-single .item-heading{
+    font-size: 1.36rem;
+    margin-top: 40px;
+    margin-bottom: 18px;
+}
+.about-us-single a .item-heading:last-child{
+    margin-top: 0;
+}
+.about-us-single .main-item-info{
+    margin-top: 0;
+    margin-bottom: 52px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.1667rem;
+    line-height: 125%;
+    color: #FFFBF2;
+}
+.item-info {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+.about-us-item-single .item-info{
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1667rem;
+    line-height: 125%;
+}
+.about-us-single__content p{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1667rem;
+    line-height: 125%;
+    color: #FFFBF2;
+}
+.about-us-single__conent a{
+    color: #FFFBF2;
+}
+.about-us-single__conent a:hover{
+    color: #FFBC6C;
+}
+.about-us-single__content .fav-icons{
+    display: flex;
+    flex-direction: row;
+    margin-top: 45px;
+}
+.about-us-single__content .fav-icons a{
+    margin-right: 20px;
+    margin-top: 0;
+}
+@media(max-width: 991.98px){
+    .about-us-single__content{
+        column-gap: 50px;
+    }
+    .about-us-item-single{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-us-item-single img{
+        max-width: 652px;
+        max-height: 650px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-us-single .main-item-info{
+        margin-top: 15px;
+    }
+}
+@media(max-width:768.98px){
+    .about-us-single__heading{
+        flex-direction: column; 
+        margin-top: 6rem;
+    }
+    .about-us-single .main-title{
+        margin-bottom: 15px;
+        font-size: 1.8rem;
+    }
+    .about-us-single .about-us-single__heading p{
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    .about-us-single .main-item-info{
+        margin-bottom: 0;
+    }
+    .about-us-single .bottom-item-info{
+        margin-top: 15px;
+    }
+    .about-us-single__content .fav-icons{
+        margin-top: 25px;
+    }
+}
+@media(max-width:420.98px){
+    .about-us-single{
+        padding-top: 20px;
+        padding-bottom: 100px;
+    }
+    
+    .about-us-single .main-title{
+        display: block;
+        font-size: 15px;
+    }
+    .about-us-single .about-us-single__heading p{
+        font-size: 12px;
+    }
+    .about-us-single .main-item-info{
+        font-size: 12px;
+    }
+    .about-us-item-single .item-info{
+        font-size: 12px;
+    }
+    .about-us-single .bottom-item-info{
+        font-size: 12px;
+    }
+    .about-us-single .item-heading{
+        font-weight: 700;
+        line-height: 126%;
+        margin-bottom: 15px;
+    }
+    .about-us-single p{
+        line-height: 140%;
+        margin-top: 15px;
+    }
+    .about-us-single__content .fav-icons a svg{
+        width: 44px;
+    }
+}

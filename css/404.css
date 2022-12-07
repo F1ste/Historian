@@ -1,0 +1,73 @@
+.main{
+    padding: 200px 0px;
+    background-image:url(../img/bg.png);
+	background-repeat: no-repeat;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+    background-position: center;
+}
+.main__container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.error-404__back-btn, .error-404__next-btn{
+    position: relative;
+    border-bottom: 2px solid #FFFFFF;
+    padding-bottom: 12px;
+}
+.error-404__back-btn{
+    padding-left: 10px;
+}
+.error-404__back-btn:before{
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: -6px;
+    width: 10px;
+    height: 10px;
+    background: #FFFFFF;
+    transform: rotate(45deg);
+}
+.error-404__next-btn:after{
+    content: '';
+    position: absolute;
+    top: 30px;
+    right: -6px;
+    width: 10px;
+    height: 10px;
+    background: #FFFFFF;
+    transform: rotate(45deg);
+}
+.error-404__next-btn{
+    margin-top: 75px;
+    padding-right: 10px;
+}
+.error-404__back-btn a, .error-404__next-btn a{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 113.5%;
+    color: #FFFBF2;
+}
+.error-404{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 200px;
+    line-height: 267px;
+    color: #FFFFFF;
+}
+.info__error-404{
+    margin-top: 15px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 27px;
+    color: #FFFFFF;
+    max-width: 365px;
+}

@@ -1,0 +1,33 @@
+.article{
+    padding-top: 0;
+}
+.article__heading{
+    max-width: 800px;
+}
+.main .main-info {
+    padding-top: 20px;
+}
+.main-content.slider-item{
+    height: 1010px;
+}
+.main-content .actual-day{
+    color:#FFBC6C !important;;
+}
+@media (max-width: 768.68px){
+    .main-content.slider-item{
+        height: auto;
+    }
+    .main-content .actual-day{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .main-content .actual-info{
+        font-size: 1.9rem;
+        line-height: 2.7222rem;
+    }
+}
+@media (max-width: 420px){
+    .main-content .actual-day{
+        margin-top: 275px;
+    }
+}

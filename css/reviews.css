@@ -1,0 +1,100 @@
+.reviews{
+    background: #120D0D;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    flex: 1 0 auto;
+}
+.reviews__heading{
+    margin-top: 8.3333rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reviews__heading p{
+    max-width: 775px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.167rem;
+    line-height: 125%;
+}
+.reviews .main-title{
+    margin-top: 0;
+    margin-right: 135px;
+    font-size: 2.5rem;
+    line-height: 100%;
+    border-bottom: 2px solid rgba(246, 239, 222, 0.6);
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.reviews__content{
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 50px;
+}
+.reviews-item__heading {
+    display: flex;
+    align-items: center;
+}
+.reviews-item p{
+    margin-top: 30px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 125%;
+}
+.reviews-item__heading p{
+    font-weight: 700;
+    font-size: 1.5625rem;
+    line-height: 2rem;
+    color: #FFFBF2;
+}
+.reviews-item img{
+    width: 140px;
+    height: 140px;
+    margin-right: 30px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+}
+.review__date-and-info {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.6875rem;
+    color: rgba(255, 251, 242, 0.5);
+    border-bottom: 2px solid rgba(246, 239, 222, 0.6);
+    padding-bottom: 15px;
+    display: inline-block;
+}
+@media(max-width:991.98px){
+    .reviews .main-title{
+        margin-bottom: 15px;
+    }
+    .reviews__heading{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .reviews__content{
+        grid-template-columns: 1fr;
+    }
+    .reviews__heading{
+        margin-top: 50px;
+    }
+    .reviews__content{
+        margin-top: 55px;
+    }
+}
+@media(max-width:420.98px){
+    .reviews-item__heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .reviews__heading{
+        margin-top: 0;
+    }
+    .reviews__content{
+        margin-top: 45px;
+    }
+}

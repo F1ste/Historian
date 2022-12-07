@@ -1,0 +1,171 @@
+
+form a {
+  font-weight: 400;
+  color: rgba(255, 255, 255, .7);
+  text-decoration: none;
+  transition: color .1s ease-in-out;
+}
+form a:hover, form a:focus {
+  color: #ffffff;
+}
+
+
+/* UTILITIES */
+
+.header-2 {
+  font-family: 'Playfair Display';
+  font-weight: 500;
+  font-size: 40px;
+  color: #ffffff;
+}
+
+a.header-2 {
+  color: rgba(255, 255, 255, .3);
+}
+
+a.header-2:hover, a.header-2:focus {
+  color: #ffffff;
+}
+
+/* COMPONENTS */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.form-label {
+  font-family: 'Raleway';
+  font-weight: 600;
+  font-size: 12px;
+  color: #fffbff;
+  padding-left: 8px;
+}
+
+.form-control {
+  background: #efe6de;
+  border: 1px #ffbc6c solid;
+  border-radius: 3px;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 14px;
+  color: #181818;
+  width: 100%;
+  padding: 13px 24px;
+  outline: none;
+  transition: outline .2s ease-in-out;
+
+}
+
+.form-control:focus, .form-control:hover {
+  outline: 2.5px #ffbc6c solid;
+}
+
+.form-control::placeholder {
+  color: #939094;
+}
+
+.form-control-addon {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.form-control-addon .form-control {
+  padding-right: 62px;
+}
+
+.form-control-addon .addon-btn {
+  position: absolute;
+  background: url('../resources/icons/eye.svg') center no-repeat;
+  background-size: contain;
+  border: none;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  right: 24px;
+}
+._form-error .addon-btn{
+  background: url(../resources/icons/eye-invalid.svg) center no-repeat;
+  top: 50%;
+  bottom: 50%;
+} 
+.form-control-addon:invalid .addon-btn{
+  position: absolute;
+  background: url('../resources/icons/eye-invalid.svg') center no-repeat;
+}
+.form-label_error{
+  color: #BA5164;
+}
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+
+  position: relative;
+  overflow: hidden;
+  overflow-y: auto;
+  min-height: 100vh;
+  background: url(../img/bg.png) center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.form-wrapper::after {
+  position: fixed;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.form {
+  z-index: 1;
+  background: rgba(252, 250, 255, .14);
+  border: 1px #ffffff solid;
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+  width: 50%;
+  padding: 46px 93px;
+  max-width: 783px;
+
+}
+
+.form .form-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 26px;
+  margin-bottom: 30px;
+}
+
+.form .form-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 30px;
+  padding-right: 25%;
+}
+
+.form .form-group {
+  width: 100%;
+}
+
+.form .btn {
+  min-width: 50%;
+  width: auto;
+}
+
+.divider {
+  width: 1px;
+  align-self: stretch;
+  background: #ffffff;
+}

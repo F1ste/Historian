@@ -1,0 +1,128 @@
+.news{
+    background: #120D0D;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: 0;
+    flex: 1 0 auto;
+}
+.news .main-title{
+    display: inline-block;
+    margin-top: 8.3333rem;
+    font-size: 2.5rem;
+    line-height: 100%;
+    border-bottom: 2px solid rgba(246, 239, 222, 0.6);
+    padding-bottom: 20px;
+    padding-right: 20px;
+    margin-bottom: 68px;
+}
+.news__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 111px;
+}
+.news-item a p:hover{
+    color: #FFBC6C;
+}
+.news-item h3{
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.32;
+    color: #FFFFFF;
+}
+.news-item p{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.15rem;
+    line-height: 1.4375rem;
+    color: #FFFFFF;
+    margin-top: 0.9rem;
+}
+.news .news-item span{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.15rem;
+    line-height: 1.4375rem;
+    color: #FFFFFF;
+}
+.news .news-item span:hover{
+    color: #FFBC6C;
+}
+
+.news .news-item{
+    display: flex;
+}
+.news .news-item .favorite{
+    margin-top: 12px;
+    margin-left: 63px;
+}
+
+.search-results .main-title{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+@media(max-width:991.98px){
+    .news-item{
+        max-width: 100%;
+    }
+    .news .main-title{
+        border: none;
+    }
+}
+@media (max-width: 768.98px){
+
+    .news__content{
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+    .news .main-title{
+        margin-top: 6.3333rem;
+        margin-bottom: 14px;
+    }
+    .search-results .main-title{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+@media (max-width: 625px){
+    .news .main-title{
+        margin-top: 3.3333rem;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .search-results .main-title{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .news .news-item h3{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.5rem;
+    }
+    .news .news-item {
+        margin-top: 0;
+    }
+    .news .news-item p{
+        margin-top: 5px;
+        font-size: 12px;
+    }
+    ul.pagination li a {
+        font-size: 1.575rem;
+        padding: 8px 14px;
+    }
+}
+@media (max-width: 420px){
+    .news .main-title {
+        margin-top: 10px;
+    }
+    .search-results .main-title{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    ul.pagination li a {
+        font-size: 1.575rem;
+        padding: 8px 10px;
+    }
+}
