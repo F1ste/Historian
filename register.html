@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="msapplication-TileColor" content="#160f0f" />
+  <meta name="msapplication-config" content="./favicon/browserconfig.xml" />
+  <meta name="theme-color" content="#160f0f" />
+  <title>Регистрация - Историк</title>
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/auth.css">
+  <link rel="stylesheet" href="css/auth-responsive.css">
+</head>
+<body>
+  <div class="overlay"></div>
+  <header class="header">
+      <div class="header__container">
+          <div>
+              <a href="index.html" class="header__logo">Историк</a>
+          </div>
+          <div class="header__menu">
+              <a href="" class="back-btn">Назад</a>
+              <a href="#menu" class="burger-menu"><span></span></a>
+              <nav id="menu" class="menu__body">
+                  <ul class="menu__list">                    
+                      <li class="menu__item"><a href="settings.html" class="menu__link">Личный кабинет</a></li>
+                      <li class="menu__item"><a href="journal-mainpage.html" class="menu__link">Журнал</a>                           
+                      </li>
+                      <li class="menu__item"><a href="#popupChangePass" class="menu__link popup-link">Актуально</a>
+                          <div class="dropdown">
+                              <div class="dropdown-content">
+                              <a href="news.html">Новости</a>
+                              <a href="article-day-artwork.html">Картина недели</a>
+                              <a href="day-in-history.html">День в истории</a>
+                              </div>
+                          </div></li>
+                      <li class="menu__item"><a href="journal-archive.html" class="menu__link">Архив</a>
+                          <div class="dropdown">
+                              <div class="dropdown-content">
+                              <a href="journal-archive.html">Архив</a>
+                              <a href="videos.html">Архив видео</a>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="menu__item"><a href="about-us.html" class="menu__link">О нас</a>
+                          <div class="dropdown">
+                              <div class="dropdown-content">
+                              <a href="about-us.html">Редакция</a>
+                              <a href="shop.html">Где купить</a>
+                              <a href="faq.html">Вопрос-ответ</a>
+                              <a href="contacts.html">Контакты</a>
+                              <a href="reviews.html">Отзывы</a>
+                              </div>
+                          </div>
+                      </li>  
+                      <li class="menu__item">
+                          <div class="search-wrap">
+                              <form id="" action="#" method="post">
+                                  <input class="custom-input search-input" name="headerSearch" autocomplete="off" placeholder="Введите, что вас интересует" type="search">
+                                  <button class="search-btn" type="submit"></button>
+                                  <span class="search-icon"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M23 23L17.925 17.9251M20.6668 11.3331C20.6668 16.4877 16.4881 20.6663 11.3334 20.6663C6.1787 20.6663 2 16.4877 2 11.3331C2 6.17858 6.1787 2 11.3334 2C16.4881 2 20.6668 6.17858 20.6668 11.3331Z" stroke="#F6EFDE" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                      </span>
+                              </form>
+                          </div>
+                      </li>        
+                  </ul>
+                  <ul class="burger__list">
+                      <li class="menu__item burger__item"><a href="settings.html" class="menu__link">Личный кабинет</a></li>
+                      <li class="menu__item burger__item"><a href="#" class="menu__link search__link">Поиск</a>
+                          <form class="mobile-search" action="" method="post">
+                              <input class="custom-input" name="headerSearch" placeholder="Введите, что вас интересует" type="search">
+                              <button class="search-btn" type="submit"></button>
+                            </form>
+                      </li>
+                      <li class="menu__item burger__item"><a href="journal-mainpage.html" class="menu__link">Журнал</a></li>
+                      <li class="menu__item burger__item"><a href="news.html" class="menu__link">Новости</a></li>
+                      <li class="menu__item burger__item"><a href="day-in-history.html" class="menu__link">День в истории</a></li>
+                      <li class="menu__item burger__item"><a href="#" class="menu__link">Актуально</a></li>
+                      <li class="menu__item burger__item"><a href="article-day-artwork.html" class="menu__link">Картина недели</a></li>
+                      <li class="menu__item burger__item"><a href="journal-archive.html" class="menu__link">Архив</a></li>
+                      <li class="menu__item burger__item"><a href="videos.html" class="menu__link">Видео</a></li>
+                      <li class="menu__item burger__item"><a href="about-us.html" class="menu__link">О нас</a></li>
+                      <li class="menu__item burger__item"><a href="shop.html" class="menu__link">Где купить</a></li>
+                  </ul>
+              </nav>
+          </div>
+      </div>
+  </header>
+  <div class="form-wrapper">
+    <div class="form">
+      <div class="form-title">
+        <a class="header-2" href="./avto.html">Вход</a>
+        <div class="divider"></div>
+        <h2 class="header-2">Регистрация</h2>
+      </div>
+      <form id="AuthForm" class="form-body" method="post" action="#">
+        <div class="form-group">
+          <label class="form-label " for="email">E-mail</label>
+          <div class="form-control-addon">
+            <input class="form-control _email _req" type="email" id="email" name="email" placeholder="Введите e-mail" />
+          </div>
+          <div class="form-error__msg">Helper text</div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="password" >Пароль</label>
+          <div class="form-control-addon">
+            <input class="form-control _pass _req" type="password" id="password" name="password" placeholder="Введите пароль" />
+            <button class="password-toggler addon-btn" type="button"></button>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="repeat_password">Повторите пароль</label>
+          <div class="form-control-addon">
+            <input class="form-control _rep-pass _req" type="password" id="repeat_password" name="repeat_password" placeholder="Введите пароль" />
+            <button class="password-toggler addon-btn" type="button"></button>
+          </div>
+        </div>
+        <button class="btn" type="submit">Зарегистрироваться</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/main.js" type="text/javascript"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/toggleMobileSearch.js"></script> 
+  <script src="js/slick.js"></script>
+  <script src="js/slider-bg.js"></script>
+  <script src="js/popups.js"></script>
+</body>
+</html>
