@@ -6,6 +6,10 @@
 }
 .reviews__heading{
     margin-top: 8.3333rem;
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,6 +39,10 @@
     row-gap: 50px;
 }
 .reviews-item__heading {
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
     align-items: center;
 }

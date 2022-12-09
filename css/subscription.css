@@ -30,6 +30,10 @@
     left: 0;
     height: 100%;
     width: 100%;
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,6 +50,10 @@
 
 .personal-sub-title {
     font-family: 'Raleway';
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
     justify-content: space-between;
     font-size: 22px;

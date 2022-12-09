@@ -123,6 +123,10 @@ ul.pagination{
 }
 
 .personal-social {
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     justify-content: space-around;   
@@ -167,6 +171,10 @@ ul.pagination{
 }
 
 .personal-content__row {
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -177,6 +185,10 @@ ul.pagination{
     flex: 0 0 25%;
     padding: 0 14px;
     margin-bottom: 59px;
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -222,6 +234,10 @@ ul.pagination{
 }
 
 .personal-card-stats {
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
 }
 
@@ -292,6 +308,10 @@ ul.pagination{
 }
 
 .personal-container {
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
     align-items: flex-start;
     position: relative;

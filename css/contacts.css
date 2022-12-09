@@ -9,6 +9,10 @@
 }
 
 .contacts__header {
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -98,6 +102,10 @@
 }
 
 .contacts-feedback-form {
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
     align-items: center;
 }

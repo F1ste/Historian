@@ -32,6 +32,10 @@
     max-width: 650px;
 }
 .week-artworks-item a{
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
     flex-direction: column;
     height: 100%;

@@ -5,6 +5,10 @@
     flex: 1 1 auto;
 }
 .videos__heading{
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,6 +41,10 @@
     color: #FFFBF2;
 }
 .videos__heading form{
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
     justify-content: flex-end;
 }

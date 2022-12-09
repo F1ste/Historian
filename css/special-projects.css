@@ -6,6 +6,10 @@
 }
 .special-projects__heading{
     margin-top: 8.3333rem;
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,6 +42,10 @@
     color: #FFFBF2;
 }
 .special-projects__heading form{
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
     justify-content: flex-end;
 }

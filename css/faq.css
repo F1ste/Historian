@@ -12,6 +12,10 @@
 }
 .faq__heading{
     margin-top: 8rem;
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -107,6 +111,10 @@
     object-fit: cover;
   }
   .slider-faq__nav{
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
     margin: 40px -40px;
     justify-content: center;

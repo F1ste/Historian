@@ -88,6 +88,10 @@ body{
     border-right: 2px solid #b3b3b3;
 }
 .stories__big-item a{
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
     flex-direction: column;
 }
@@ -127,6 +131,10 @@ body{
     padding-bottom: 20px;
 }
 .journal-news__item a{
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
     flex-direction: column;
 }

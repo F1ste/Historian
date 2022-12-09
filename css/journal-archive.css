@@ -6,6 +6,10 @@
 }
 .journal-archive__heading{
     margin-top: 8.3333rem;
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,6 +33,10 @@
     padding-bottom: 20px;
 }
 .journal-archive__content {
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -68,6 +76,10 @@
 }
 
 .journal-item-stats {
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
 }
 
@@ -83,6 +95,10 @@
     color: #FFFFFF;
 }
 .journal-nav {
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
     justify-content: space-between;
     margin-top: 50px;

@@ -1,7 +1,9 @@
 .preview__content p:not(:first-child){
     display: none;
 }
-
+.subs__content p:not(:first-child){
+    display: none;
+}
 .article {
     background: #120D0D;
     padding-top: 100px;
@@ -10,6 +12,10 @@
 }
 
 .article-menu {
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -24,6 +30,10 @@
 }
 
 .article-menu-item a {
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
     align-items: center;
 }
@@ -107,6 +117,10 @@
     object-fit: cover;
 }
 .preview__btn{
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
     justify-content: center;
 }
@@ -118,6 +132,10 @@
 }
 .box-image{
     margin-bottom: 10px;
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -130,6 +148,10 @@
 }
 
 .bottom-article-sect {
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -147,6 +169,10 @@
     min-width: 160px;
 }
 .add-favorite a {
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -158,6 +184,10 @@
 }
 
 .article-nav {
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
@@ -417,6 +447,10 @@ body.style-6 .highlight {
 }
 
 .article-settings__range {
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
     align-items: center;
     margin-bottom: 21px;

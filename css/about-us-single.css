@@ -17,6 +17,10 @@
 }
 .about-us-single__heading{
     margin-top: 9rem;
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
     justify-content: space-between;
 }
@@ -98,6 +102,10 @@
     color: #FFBC6C;
 }
 .about-us-single__content .fav-icons{
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     margin-top: 45px;
@@ -111,7 +119,11 @@
         column-gap: 50px;
     }
     .about-us-item-single{
-        display: flex;
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
+    display: flex;
         flex-direction: column;
     }
     .about-us-item-single img{

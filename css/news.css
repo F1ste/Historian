@@ -52,6 +52,10 @@
 }
 
 .news .news-item{
+    display: -webkit-box;      
+    display: -moz-box;        
+    display: -ms-flexbox;      
+    display: -webkit-flex;
     display: flex;
 }
 .news .news-item .favorite{
