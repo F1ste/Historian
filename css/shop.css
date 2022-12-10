@@ -11,12 +11,15 @@
 
 .personal-field__input-wrapper {
     position: relative;
-    display: -webkit-box;      
-    display: -moz-box;        
-    display: -ms-flexbox;      
+    display: -webkit-box;
     display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 .personal-field__search-wrapper {
     position: relative;
@@ -39,15 +42,22 @@
     content: url(../img/search-invalid.svg);
 }
 .personal-field__input {
-    flex: 1 1 100%;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 100%;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
     width: 100%;
     padding: 17px 48px;
     background: #EFE6DE;
-    border-radius: 3px;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
 }
 
 .personal-field__text {
-    flex: 0 1 310px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 310px;
+        -ms-flex: 0 1 310px;
+            flex: 0 1 310px;
     font-weight: 300;
     font-size: 16px;
     line-height: 120%;
@@ -60,13 +70,20 @@
 
 @media(max-width:767.98px) {
     .personal-field__input-wrapper {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
         margin-left: 0px;
         margin-top: 20px;
     }
 
     .personal-field__text {
-        flex: auto;
+        -webkit-box-flex: 1;
+        -webkit-flex: auto;
+            -ms-flex: auto;
+                flex: auto;
         margin-left: 0px;
         margin-top: 10px;
         font-size: 13px;

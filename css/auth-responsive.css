@@ -11,7 +11,9 @@
   }
 
   .form .form-title {
-    column-gap: 20px;
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
   }
 
   .form .form-body {
@@ -69,12 +71,15 @@
   }
 
   .form {
-    border-radius: 3px;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
     padding: 27px 15px;
   }
 
   .form .form-title {
-    column-gap: 10px;
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
   }
 
   .form .form-body {

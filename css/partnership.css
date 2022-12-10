@@ -1,6 +1,10 @@
 
 .contacts__header{
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 .personal-title{
     padding-bottom: 10px;
@@ -15,6 +19,9 @@
 }
 @media(max-width:767.98px) {
     .contacts__header{
-        align-items: normal;
+        -webkit-box-align: normal;
+        -webkit-align-items: normal;
+            -ms-flex-align: normal;
+                align-items: normal;
     }
 }

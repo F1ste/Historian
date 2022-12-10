@@ -66,8 +66,10 @@ ul.pagination{
 
 .personal-sidebar {
     background: rgba(252, 250, 255, 0.15);
-    backdrop-filter: blur(12px);
-    border-radius: 10px;
+    -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
     border: 1px solid #FFFBF2;
     padding: 61px 40px 28px 40px;
 }
@@ -88,6 +90,8 @@ ul.pagination{
     font-style: normal;
     font-size: 0.9375rem;
     color: #FFFBF2;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
     transition: 0.2s;
 }
 
@@ -123,23 +127,36 @@ ul.pagination{
 }
 
 .personal-social {
-    display: -webkit-box;      
-    display: -moz-box;        
-    display: -ms-flexbox;      
+    display: -webkit-box;
     display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;   
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;   
 }
 
 .personal-content {
-    flex: 1;
-    align-self: stretch;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-align-self: stretch;
+        -ms-flex-item-align: stretch;
+                -ms-grid-row-align: stretch;
+            align-self: stretch;
     background: rgba(252, 250, 255, 0.1);
-    border-radius: 10px;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
     border: 1px solid #FFFBF2;
     padding: 55px 60px;
-    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+            backdrop-filter: blur(2px);
 }
 
 .personal-content__title {
@@ -171,27 +188,41 @@ ul.pagination{
 }
 
 .personal-content__row {
-    display: -webkit-box;      
-    display: -moz-box;        
-    display: -ms-flexbox;      
+    display: -webkit-box;
     display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     margin: 0 -14px;
 }
 
 .personal-card {
-    flex: 0 0 25%;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 25%;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
     padding: 0 14px;
     margin-bottom: 59px;
-    display: -webkit-box;      
-    display: -moz-box;        
-    display: -ms-flexbox;      
+    display: -webkit-box;
     display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .personal-card__image {
@@ -213,7 +244,8 @@ ul.pagination{
 .personal-card__image.article-bg{
     background: #222222;
     outline: 3px solid rgba(226, 161, 82, 0.28);
-    border-radius: 3px;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
 }
 
 .personal-card__image.article-bg img{
@@ -221,12 +253,15 @@ ul.pagination{
     left: 50%;
     max-height: 50%;
     max-width: 50%;
-    transform: translate(-50%, -50%);  
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);  
 }
 .personal-card__title {
     display: block;
     font-weight: 700;
     font-size: 1.565rem;
+    font-size: -webkit-calc(13px + 12 * (100vw / 1920));
     font-size: calc(13px + 12 * (100vw / 1920));
     line-height: 124%;
     color: #FFFFFF;
@@ -234,10 +269,9 @@ ul.pagination{
 }
 
 .personal-card-stats {
-    display: -webkit-box;      
-    display: -moz-box;        
-    display: -ms-flexbox;      
+    display: -webkit-box;
     display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -252,12 +286,14 @@ ul.pagination{
 
 .personal-card-stats__item {
     font-size: 1.125rem;
+    font-size: -webkit-calc(10px + 8 * (100vw / 1920));
     font-size: calc(10px + 8 * (100vw / 1920));
     line-height: 100%;
     color: #FFFFFF;
 }
 .personal-card-stats__item span{
     font-size: 1.565rem;
+    font-size: -webkit-calc(15px + 10 * (100vw / 1920));
     font-size: calc(15px + 10 * (100vw / 1920));
     font-weight: 700;
 }
@@ -270,8 +306,11 @@ ul.pagination{
     padding: 16px 20px;
     border: 2px solid #FFBC6C;
     background: #FFBC6C;
-    border-radius: 3px;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
     text-align: center;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
     transition: 0.2s;
 }
 
@@ -296,7 +335,8 @@ ul.pagination{
     width: 100%;
     padding: 14px 23px;
     background: #EFE6DE;
-    border-radius: 3px;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
 
 }
 
@@ -308,12 +348,14 @@ ul.pagination{
 }
 
 .personal-container {
-    display: -webkit-box;      
-    display: -moz-box;        
-    display: -ms-flexbox;      
+    display: -webkit-box;
     display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-start;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     position: relative;
     max-width: 1680px;
     margin: 0 auto;
@@ -328,7 +370,10 @@ ul.pagination{
 
 @media (max-width: 1440px) {
     .personal-card {
-        flex: 0 0 33%;
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 33%;
+            -ms-flex: 0 0 33%;
+                flex: 0 0 33%;
     }
     
 }
@@ -379,7 +424,8 @@ ul.pagination{
     .personal-content {
         padding: 0;
         background: none;
-        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+                backdrop-filter: none;
         border: none;
     }
 
@@ -388,7 +434,10 @@ ul.pagination{
     }
 
     .personal-card {
-        flex: 0 0 50%;
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 50%;
+            -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
         padding: 0 10px;
         margin-bottom: 30px;
     }

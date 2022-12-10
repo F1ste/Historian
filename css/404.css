@@ -2,20 +2,23 @@
     padding: 200px 0px;
     background-image:url(../img/bg.png);
 	background-repeat: no-repeat;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
   	background-size: cover;
     background-position: center;
 }
 .main__container{
-    display: -webkit-box;      
-    display: -moz-box;        
-    display: -ms-flexbox;      
+    display: -webkit-box;
     display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
 }
 .error-404__back-btn, .error-404__next-btn{
     position: relative;
@@ -33,7 +36,9 @@
     width: 10px;
     height: 10px;
     background: #FFFFFF;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 .error-404__next-btn:after{
     content: '';
@@ -43,7 +48,9 @@
     width: 10px;
     height: 10px;
     background: #FFFFFF;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 .error-404__next-btn{
     margin-top: 75px;
