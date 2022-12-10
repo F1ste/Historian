@@ -1129,8 +1129,10 @@ button:disabled, button[disabled], button:disabled:hover, button[disabled]:hover
     margin-top: 188px;
 }
 .main-info__img img{
+    display: block;
     width: 100%;
     height: 620px;
+    height: intrinsic;
 }
 .main-title{
     margin-top: 300px;
